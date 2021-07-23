@@ -1,0 +1,14 @@
+<form action ="/projects/create" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    Nombre: <input name="name" type="text"><br>
+    Descripcion: <input name="description" type="text"><br>
+    Fecha de inicio: <input name="start_date" type="text"><br>
+    Fecha de término: <input name="end_date" type="text"><br>
+    Estado: <select name="status">
+        <option value="Propuesta">Propuesta</option>
+        <option value="En_progreso">En progreso</option>
+        <option value="Terminado">Terminado</option>
+    </select>
+
+    <input type="submit" value="Crear">
+</form>

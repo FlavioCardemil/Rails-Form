@@ -1,0 +1,14 @@
+<% if @project.errors.any? %>
+    <div id="error_explanation">
+        <h2>
+            El post no se puede guardar porque:
+        </h2>
+        <ul>
+            <% @project.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+        </ul>
+    </div>
+<% else %>
+    <h2>Proyecto Creado</h2>
+<% end %>
