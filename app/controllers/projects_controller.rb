@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.create(name: params[:name],
+    @projects = Project.create(name: params[:name],
                               description: params[:description],
                               start_date: params[:start_date],
                               end_date: params[:end_date],
@@ -16,6 +16,6 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @project = Project.new
+    @projects = Project.new
   end
 end
